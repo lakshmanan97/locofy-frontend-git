@@ -1,0 +1,86 @@
+.frameChild {
+  height: 75px;
+  width: 1440px;
+  position: relative;
+  border-radius: 0 0 0 3.75px;
+  background-color: #32327c;
+  display: none;
+  max-width: 100%;
+}
+.frameItem {
+  height: 42px;
+  width: 42px;
+  position: relative;
+  z-index: 1;
+}
+.about,
+.contact,
+.home {
+  height: 32px;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 66px;
+  z-index: 1;
+}
+.about,
+.contact {
+  min-width: 68px;
+}
+.contact {
+  min-width: 85px;
+}
+.materialEditSymbol {
+  margin: 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: left;
+  font-size: 24px;
+  color: #fff;
+  font-family: "Abril Fatface";
+}
+.materialEditSymbolWrapper,
+.rectangleParent {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.materialEditSymbolWrapper {
+  margin: 0;
+  width: 519px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 5px 0 0;
+}
+.rectangleParent {
+  align-self: stretch;
+  border-radius: 0 0 0 3.75px;
+  background-color: #32327c;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 92px 16.5px 33px;
+  top: 0;
+  z-index: 99;
+  position: sticky;
+  gap: 20px;
+}
+@media screen and (max-width: 750px) {
+  .materialEditSymbolWrapper {
+    display: none;
+  }
+  .rectangleParent {
+    padding-right: 46px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .rectangleParent {
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+}

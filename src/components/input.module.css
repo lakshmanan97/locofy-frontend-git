@@ -1,0 +1,69 @@
+.circleIcon,
+.frameChild,
+.wrapperCircle {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.circleIcon {
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  z-index: 2;
+  object-fit: contain;
+  top: 6px;
+  transform: scale(1.164);
+}
+.frameChild,
+.wrapperCircle {
+  top: 0;
+}
+.wrapperCircle {
+  margin: 0 !important;
+  right: 0;
+  bottom: 0;
+  border-radius: 606.36px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.frameChild {
+  border-radius: 50%;
+  background-color: #4caf50;
+  z-index: 3;
+}
+.vectorIcon {
+  position: absolute;
+  top: 4.4px;
+  left: 4.3px;
+  width: 7.3px;
+  height: 7.3px;
+  z-index: 4;
+}
+.ellipseParent {
+  height: 15.199999999999818px;
+  width: 15.199999999999818px;
+  position: relative;
+}
+.frameWrapper,
+.wrapperCircleParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+}
+.wrapperCircleParent {
+  width: 109.6px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 2px 10.199999999999818px 2.300000000000182px;
+  box-sizing: border-box;
+  position: relative;
+}
+.frameWrapper {
+  flex: 1;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 20px 0 21px;
+}

@@ -1,0 +1,143 @@
+.wrapIcon {
+  height: 147px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  min-width: 144px;
+}
+.india {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 168.02%;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 92px;
+}
+.span {
+  color: var(--color-cornflowerblue);
+}
+.countryCodeContainer {
+  position: relative;
+  font-weight: 600;
+}
+.countryCode {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-10xs);
+  font-size: var(--font-size-5xl);
+  color: var(--color-gray-100);
+}
+.indiaParent {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--gap-xs);
+}
+.frameWrapper,
+.indiaParent,
+.wrapParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameWrapper {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-6xs) 0 0;
+  box-sizing: border-box;
+  min-width: 150px;
+}
+.wrapParent {
+  width: 518px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--gap-47xl);
+  max-width: 100%;
+}
+.statesView {
+  margin: 0;
+  height: 64px;
+  width: 243px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+}
+.stateCodeTF {
+  height: 55px;
+  width: 112px;
+}
+.frameContainer,
+.frameParent,
+.statesViewParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.statesViewParent {
+  width: 750px;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.frameContainer,
+.frameParent {
+  align-self: stretch;
+  justify-content: flex-end;
+  font-size: var(--font-size-29xl);
+  color: var(--color-gray-300);
+}
+.frameParent {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-74xl);
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-gray-200);
+  font-family: var(--font-abril-fatface);
+}
+@media screen and (max-width: 750px) {
+  .india {
+    font-size: var(--font-size-13xl);
+    line-height: 54px;
+  }
+  .statesView {
+    font-size: var(--font-size-19xl);
+  }
+}
+@media screen and (max-width: 675px) {
+  .wrapParent {
+    gap: var(--gap-14xl);
+  }
+  .frameParent {
+    gap: 46px 93px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .india {
+    font-size: var(--font-size-5xl);
+    line-height: 40px;
+  }
+  .countryCodeContainer {
+    font-size: var(--font-size-lgi);
+  }
+  .wrapParent {
+    gap: var(--gap-base);
+  }
+  .statesView {
+    font-size: var(--font-size-10xl);
+  }
+  .statesViewParent {
+    flex-wrap: wrap;
+  }
+  .frameParent {
+    gap: 23px 93px;
+  }
+}

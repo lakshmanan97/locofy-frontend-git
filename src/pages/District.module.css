@@ -1,0 +1,53 @@
+.frameParent {
+    width: 1234px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 106px;
+    max-width: 100%;
+  }
+  .desktop2,
+  .desktop2Inner {
+    display: flex;
+    box-sizing: border-box;
+  }
+  .desktop2Inner {
+    width: 1416px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 var(--padding-xl);
+    max-width: 100%;
+  }
+  .desktop2 {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-white);
+    overflow: hidden;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0 0 107px;
+    gap: 166.5px;
+    letter-spacing: normal;
+  }
+  @media screen and (max-width: 750px) {
+    .desktop2 {
+      gap: 83px 166.5px;
+    }
+  }
+  @media screen and (max-width: 675px) {
+    .frameParent {
+      gap: 53px 106px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .frameParent {
+      gap: 26px 106px;
+    }
+    .desktop2 {
+      gap: 42px 166.5px;
+    }
+  }
+  

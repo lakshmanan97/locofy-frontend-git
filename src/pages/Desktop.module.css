@@ -1,0 +1,36 @@
+.frameChild {
+  height: 609px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.desktop1,
+.desktop1Inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.desktop1Inner {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 54.5px;
+  max-width: 100%;
+}
+.desktop1 {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  flex-direction: column;
+  padding: 0 0 96px;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 750px) {
+  .desktop1Inner {
+    padding-bottom: 35px;
+    box-sizing: border-box;
+  }
+}

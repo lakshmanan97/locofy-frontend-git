@@ -1,0 +1,119 @@
+.frameChild {
+  width: 251px;
+  height: 201px;
+  position: relative;
+  border-radius: var(--br-5xl);
+  background-color: var(--color-white);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 0.5px solid var(--color-gray-500);
+  box-sizing: border-box;
+  display: none;
+}
+.tamilNadu {
+  height: 32px;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 119px;
+  z-index: 1;
+}
+.tamilnadu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-7xl);
+}
+.tn {
+  color: var(--color-cornflowerblue);
+}
+.stateCodeContainer {
+  height: 27px;
+  position: relative;
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  display: inline-block;
+  z-index: 1;
+  color: var(--color-black);
+}
+.materialSymbolseditOutlineIcon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.materialSymbolseditOutlineWrapper {
+  height: 26px;
+  width: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-11xs);
+  box-sizing: border-box;
+}
+.frameItem {
+  height: 29.5px;
+  width: 0.5px;
+  position: relative;
+  border-right: 0.5px solid var(--color-gray-400);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.frameInput {
+  margin: 0;
+  height: 26px;
+  width: 24px;
+}
+
+.flexrow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexrow > div {
+  /* Adjust these values as needed */
+  flex-basis: calc(20% - 10px); /* Set the initial width of each item */
+  margin-bottom: 20px; /* Add some space between rows */
+} 
+.frameParent,
+.frameWrapper,
+.rectangleParent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.frameParent {
+  align-items: flex-end;
+  gap: 13.25px;
+}
+.frameWrapper,
+.rectangleParent {
+  align-items: flex-start;
+  padding: 0 var(--padding-29xl);
+}
+.rectangleParent {
+  border-radius: var(--br-5xl);
+  background-color: var(--color-white);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 0.5px solid var(--color-gray-500);
+  flex-direction: column;
+  padding: var(--padding-xl) var(--padding-20xl) var(--padding-3xs);
+  gap: var(--gap-22xl);
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-gray-400);
+  font-family: var(--font-abril-fatface);
+  margin: 10px;
+}
+@media screen and (max-width: 450px) {
+  .tamilNadu {
+    font-size: var(--font-size-lgi);
+  }
+  .stateCodeContainer {
+    font-size: var(--font-size-base);
+  }
+}

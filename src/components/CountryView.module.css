@@ -1,0 +1,234 @@
+.countryView1 {
+  margin: 0;
+  height: 48px;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+}
+.frameChild {
+  height: 43px;
+  width: 112px;
+}
+.countryViewParent,
+.frameWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.countryViewParent {
+  width: 693px;
+  justify-content: space-between;
+  gap: 20px;
+}
+.frameWrapper {
+  align-self: stretch;
+  justify-content: flex-end;
+}
+
+.circleShapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: #e3fcff;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.circleIcon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 332px;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  z-index: 2;
+}
+.circleShapesParent {
+  height: 100px;
+  flex: 1;
+  position: relative;
+}
+.frameContainer,
+.frameDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameDiv {
+  flex: 1;
+}
+.frameContainer {
+  align-self: stretch;
+  padding: 0 45px;
+}
+.india {
+  height: 32px;
+  position: relative;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 55px;
+  z-index: 1;
+}
+.indiaWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 68px 5px 67px;
+}
+.span {
+  color: #1c87dd;
+}
+.countryCodeContainer {
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  z-index: 1;
+  color: #000;
+}
+.frameGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 18px;
+}
+.materialSymbolseditOutlineIcon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.materialSymbolseditOutlineWrapper {
+  width: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 2px;
+  box-sizing: border-box;
+}
+.frameInner {
+  height: 29.5px;
+  width: 0.5px;
+  position: relative;
+  border-right: 0.5px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.frameInput {
+  margin: 0;
+  height: 26px;
+  width: 24px;
+}
+.frameParent1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 13.25px;
+}
+.frameWrapper1 {
+  flex-direction: row;
+  padding: 0 59px 0 57px;
+}
+.countryView,
+.frameParent,
+.frameWrapper1,
+.rectangleParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.rectangleParent {
+  width: 251px;
+  border-radius: 24px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 20px 29px 6px;
+  gap: 45px;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.5);
+
+  margin: 14px;
+  
+}
+.countryView,
+.frameParent {
+  max-width: 100%;
+}
+.frameParent {
+  flex: 1;
+  flex-direction: column;
+  gap: 69px;
+}
+.flexrow {
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+.flexrow > div {
+  /* Adjust these values as needed */
+  flex-basis: calc(20% - 10px); /* Set the initial width of each item */
+  margin-bottom: 20px; /* Add some space between rows */
+}
+
+/* Adjust the margin for the last two items */
+
+.countryView {
+  width: 1375px;
+  flex-direction: row;
+  padding: 0 70px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 36px;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Abril Fatface";
+}
+@media screen and (max-width: 1200px) {
+  .countryView {
+    padding-left: 35px;
+    padding-right: 35px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .countryView1 {
+    font-size: 29px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .frameParent {
+    gap: 34px 69px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .countryView1 {
+    font-size: 22px;
+  }
+  .countryViewParent {
+    flex-wrap: wrap;
+  }
+  .india {
+    font-size: 19px;
+  }
+  .countryCodeContainer {
+    font-size: 16px;
+  }
+  .frameParent {
+    gap: 17px 69px;
+  }
+}
